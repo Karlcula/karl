@@ -1,0 +1,57 @@
+body {
+    /* Centering the content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    background-color: #36454F; 
+}
+
+.calculator {
+    /* Styling for the calculator container */
+    background-color: #2B3856; 
+    border-radius: 5px; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+    text-align: center; 
+}
+
+#display {
+    /* Styling for the display area */
+    width: 92%; 
+    margin-bottom: 10px;
+    padding: 10px; 
+    font-size: 24px; 
+}
+
+.keys {
+    /* Styling for the keys/buttons container */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px; 
+}
+
+button {
+    /* Styling for buttons */
+    padding: 10px; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button#equal {
+    grid-column: 4 / span 1; /* Position '=' button at the end of the grid */
+}
+
+button#zero {
+    grid-column: 1 / span 2; /* Make '0' button span two columns */
+    font-size: 30px; /* Increase font size of '0' button */
+}
+
+
+
+button:hover {
+    background-color: #D5D6EA; /* Background color when hovering */
+}
